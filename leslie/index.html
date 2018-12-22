@@ -16,10 +16,10 @@
 			<div class="wrap_top con">
                 <a class="collection fl" onclick="FavoritesOperator.Add();">收藏</a>
                 <div class="wrap_top_left fr">
-                <a href="../index.html" target="_self">首页</a><a id="topLogin">请登录</a>
+                 <a href="../index.html" target="_self">首页</a><a href="login.html" id="topLogin">请登录</a>
                 <a class="on" id="topLoginName" style="display:none;"></a>
                 <a onclick="UserInfo.Logout();" id="topLoginOut" style="display:none;">退出</a>
-                <a id="topRegister">免费注册</a>
+                <a href="register.html" id="topRegister">免费注册</a>
                 <span>|</span>
                 <a id="fontShoppingCart">购物车<span id="shoppingCartNum">0</span>件</a>
                 <a id="myJY">我的家有</a>
@@ -33,14 +33,16 @@
 		<div id="header">
 			<div class="header con">
 				<div class="header_l fl">
-					<img src="../images/index/index_logo.jpg"/>
+					<a href="../index.html"><img src="../images/index/index_logo.jpg"/></a>
 				</div>
 				<div class="header_c fl">
 					<input class="header_inpText" type="text" name="" id="" value="" /><input class="header_inpBtn" type="button" name="header_inpBtn" id="header_inpBtn" value="搜索" />
 					<a href="#">破壁机</a><a href="#">羽绒服</a><a href="#">女装</a><a href="#">京城之霜</a><a href="#">如家床垫</a><a href="#">燕窝</a><a href="#">函数</a><a href="#">白酒</a><a href="#">顺利人</a>
 				</div>
 				<div class="header_r fl">
-					
+					<div class="shopCar">
+						<span>我的购物车</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -73,8 +75,8 @@
 					<div class="banner_r_t">
 						<img src="../images/index/index_banner_r_t.png"/>
 						<p>hi!欢迎来到惠家友</p>
-						<input type="button" name="loginBtn" id="loginBtn" value="登录" />
-						<p class="register"><a href="#">免费注册</a></p>
+						<a href="login.html"><input type="button" name="loginBtn" id="loginBtn" value="登录" /></a>
+						<p class="register"><a href="register.html">免费注册</a></p>
 					</div>
 					<div class="banner_r_b"><img src="../images/index/index_banner_r_b.png"/></div>
 				</div>

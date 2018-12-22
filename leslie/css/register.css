@@ -1,0 +1,46 @@
+.register {
+  height: 468px;
+  background-color: yellow;
+  background: url(../images/login/login_logo.png) no-repeat 527px 108px;
+  padding: 66px 0 0 66px;
+}
+
+.register .register_l {
+  width: 318px;
+  background-color: yellow;
+  text-align: right;
+}
+
+.register .register_l input {
+  margin-left: 10px;
+}
+
+.register .register_l i {
+  color: red;
+}
+
+.register .register_l i:nth-child(1) {
+  margin-left: 10px;
+}
+
+.register .register_l span {
+  font-size: 12px;
+}
+
+.register .register_l .phoneNum {
+  width: 245px;
+  height: 33px;
+  border: 1px solid #ccc;
+}
+
+.register .register_l .code {
+  width: 145px;
+  height: 33px;
+  border: 1px solid #ccc;
+}
+
+.register .register_l #codeOutput {
+  width: 100px;
+  height: 33px;
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,67 @@
+#nav {
+  height: 37px;
+  border-bottom: 3px solid #DC0F50;
+}
+
+.nav li {
+  height: 34px;
+  float: left;
+  padding-left: 40px;
+}
+
+.nav .allgoodsli {
+  width: 188px;
+  background-color: #000000;
+}
+
+.nav .allgoodsli a {
+  color: #fff;
+}
+
+.nav li a {
+  font-size: 12px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.list{
+	width: 765px;
+}
+.list .list_f
+.list .new_r {
+  width: 240px;
+  height: 476px;
+}
+
+.list .new_r_title {
+  width: 240px;
+  height: 72px;
+  padding-top: 45px;
+  padding-left: 5px;
+}
+
+.list .new_r_title .line {
+  color: #ccc;
+}
+
+.list .new_r_img {
+  height: 404px;
+  background-color: yellow;
+}
+
+.list .new_r_img .hotgoods {
+  height: 80px;
+  padding-top: 15px;
+  background-color: deepskyblue;
+}
+
+.list .new_r_img .hotgoods p {
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.list .new_r_img .hotgoods .price {
+  font-size: 14px;
+  margin-top: 28px;
+  color: red;
+}

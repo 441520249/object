@@ -50,6 +50,20 @@
   padding-right: 10px;
   color: #C0C0C0;
 }
+.header .header_r {
+	padding-top: 25px;
+	padding-left: 125px;
+}
+.header .header_r .shopCar{
+	width: 98px;
+	height: 36px;
+	border:1px solid #ccc ;
+	text-align: center;
+}
+.header .header_r .shopCar span{
+	font-size: 12px;
+	line-height: 36px;
+}
 
 .nav {
   height: 34px;
