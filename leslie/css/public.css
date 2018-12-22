@@ -1,0 +1,52 @@
+#wrap_top {
+  height: 24px;
+  background-color: #E5E5E5;
+}
+
+#wrap_top .con {
+  height: 24px;
+}
+
+.wrap_top {
+  font-size: 10px;
+  line-height: 24px;
+}
+
+.wrap_top a {
+  margin-right: 12px;
+}
+
+.header {
+  height: 104px;
+  background-color: pink;
+}
+
+.header .header_l {
+  width: 280px;
+  padding-top: 25px;
+}
+
+.header .header_c {
+  width: 400px;
+  padding-top: 25px;
+}
+
+.header .header_c .header_inpText {
+  border: 2px solid #DC0F50;
+  height: 36px;
+  width: 324px;
+}
+
+.header .header_c .header_inpBtn {
+  width: 76px;
+  height: 36px;
+  background-color: #DC0F50;
+  color: #fff;
+}
+
+.header .header_c a {
+  font-size: 12px;
+  line-height: 28px;
+  padding-right: 10px;
+  color: #C0C0C0;
+}

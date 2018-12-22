@@ -19,7 +19,7 @@ gulp.task("loginSass",function(){
 })
 // 任务2：监听a.scss
 
-gulp.task("jt",function(){
+gulp.task("loginJt",function(){
     gulp.watch("./leslie/sass/login.scss",gulp.series("loginSass"))
 })
 
@@ -35,6 +35,7 @@ gulp.task("indexSass",function(){
     .pipe(gulp.dest("./leslie/css/"))
 })
 // 任务2：监听a.scss
-gulp.task("jtindex",function(){
+gulp.task("indexJt",function(){
     gulp.watch("./leslie/sass/index.scss",gulp.series("indexSass"))
 })
+

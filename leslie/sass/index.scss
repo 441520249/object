@@ -12,9 +12,7 @@
 .wrap_top a{
     margin-right: 12px;
 }
-.wrap_top span{
-    color: red;
-}
+
 
 .header{
     height: 104px;
@@ -65,6 +63,9 @@
     font-size: 12px;
     line-height: 34px;
     color: #000000;
+}
+#banner{
+    border-top:2px solid #DC0F50;
 }
 .banner{
     height:448px ;
@@ -136,6 +137,7 @@
     height: 240px;
     padding-top: 22px;
     background-color: pink;
+    margin-bottom: 18px;
 }
 .shop_b #shop_lbtn{
     margin-top: 77px;
@@ -149,6 +151,7 @@
     width: 160px;
     height: 218px;
     position: relative;
+    margin-left: 28px;
 }
 .shop_b .goods img{
     width: 160px;
@@ -163,13 +166,126 @@
     background-color: #DC6C8F;
     color: #fff;
     text-align: center;
+    
 }
 .shop_b .goods .goodscontent{
     font-size: 12px;
+    width: 112px;
 }
 .shop_b .goods .price{
-    
+    color: red;
 }
 .shop_b .goods .buy{
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    background-color: red;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+}
+.new{
+    height: 476px;
+    background-color: pink;
+}
+.new .new_l{
+    width: 720px;
+}
+.new .new_l_title{
+    width: 720px;
+    height: 72px;
+    padding-top: 40px;
+}
+.new .new_l_title p{
+    font-size: 18px;
+    line-height: 18px;
+}
+.new .new_l_img{
+    height: 404px;
+}
+.new .new_l_img_l{
+    margin-right: 8px;
+}
+.new .new_l_img_l_t{
+    width: 240px;
+    height: 300px;
+}
+.new .new_l_img_l_b{
+     width: 240px;
+    height: 103px;
+    padding-top: 25px;
+}
+.new .new_l_img_l_b img{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.new .new_r{
+    width: 240px;
+    height: 476px;
     
+}
+.new .new_r_title{
+    width: 240px;
+    height: 72px;
+    padding-top: 45px;
+    padding-left: 5px;
+}
+.new .new_r_title .line{
+    color: #ccc;
+}
+.new .new_r_img{
+    height: 404px;
+    background-color: yellow;
+}
+.new .new_r_img .hotgoods{
+    height: 80px;
+    padding-top: 15px;
+    background-color: deepskyblue;
+}
+.new .new_r_img .hotgoods p{
+    font-size: 12px;
+    padding-left: 10px;
+}
+.new .new_r_img .hotgoods .price{
+     font-size: 14px;
+    margin-top: 28px;
+    color: red;
+}
+.goodsBanner{
+    height: 344px;
+}
+.goodsBanner .goodsBanner_t{
+    height: 64px;
+    padding-top: 38px;
+    font-size: 22px;
+    margin-bottom: 24px;
+    background-color: yellow;
+}
+.goodsBanner .goodsBanner_t .line{    
+    color: #ccc;
+}
+.goodsBanner .goodsBanner_b{
+    height: 256px;
+    background-color: pink;
+}
+.goodsBanner .goodsBanner_b #shop_lbtn{
+    margin-top: 77px;
+    float: left;
+}
+.goodsBanner .goodsBanner_b #shop_rbtn{
+    margin-top: 77px;
+    float: right;
+}
+.goodsBanner .goodsBanner_b .goods{
+    width: 182px;
+    background-color: yellow;
+}
+.goodsBanner .goodsBanner_b .goods p{
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 18px;
+}
+.goodsBanner .goodsBanner_b .goods .price{
+    color: red;
+    font-size: 14px;
 }
