@@ -44,14 +44,16 @@
 		<!--register-->	
 		<div id="register">
 			<div class="register con">
-				<div class="register_l">
-					<i>*</i><span class="num">手机号</span><input class="phoneNum" type="text"placeholder="请输入11位有效手机号" />
-					<i>*</i><span>图片验证码</span><input class="code fl" type="text" placeholder="请输入图片验证码"/><div id="codeOutput fr"></div>
-					<i>*</i><span>设置密码</span><input class="setPassword" type="text" placeholder="请输入6-16个字符，不能加空格哦"/>
-					<i>*</i><span>确认密码</span><input class="confirmPassword" type="text" placeholder="请输入确认密码"/><input type="button" id="passBtn" value="获取验证码" />
-					<input type="checkbox"/>我已经阅读并同意《会员注册协议》和《隐私保护政策》
+				<ul class="register_l">
+					<li><div class="rbox"><i>*</i><span class="num">手机号</span></div><input class="phoneNum" type="text"placeholder="请输入11位有效手机号" /></li>
+					<li><div class="rbox"><i>*</i><span>图片验证码</span></div><input class="code" type="text" placeholder="请输入图片验证码"/><div class="codeOutput fr"></div></li>
+					<li><div class="rbox"><i>*</i><span>设置密码</span></div><input class="setPassword" type="text" placeholder="请输入6-16个字符，不能加空格哦"/></li>
+					<li><div class="rbox"><i>*</i><span>确认密码</span></div><input class="confirmPassword" type="text" placeholder="请输入确认密码"/></li>
+					<li><div class="rbox"><i>*</i><span>验证码</span></div><input class="getRandom" type="text"/><input type="button" id="getRandomBtn" value="获取验证码" /></li>
+					<p><input type="checkbox"/>我已经阅读并同意《会员注册协议》和《隐私保护政策》</p>
 					<input type="button"  id="registerBtn" value="注册" />
-				</div>
+					<a class="jump" href="login.html">我已经注册，立即登录</a>
+				</ul>
 			</div>
 		</div>
 		

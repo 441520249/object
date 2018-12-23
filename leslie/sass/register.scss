@@ -5,34 +5,55 @@
     padding: 66px 0 0 66px;
 }
 .register .register_l{
-    width: 318px;
-    background-color: yellow;
+    width: 330px;
+}
+.register .register_l li{
+    margin-bottom: 14px;
+}
+.register .register_l .rbox{
+    width: 70px;
+    height: 33px;
+    font-size: 10px;
+    line-height: 33px;
     text-align: right;
+    display: inline-block;
+    margin-right: 11px;
 }
 .register .register_l input{
-    margin-left: 10px;
-}
-.register .register_l i{
-    color: red;
-}
-.register .register_l i:nth-child(1){
-    margin-left: 10px;
-}
-.register .register_l span{
-    font-size: 12px;
-}
-.register .register_l .phoneNum{
-    width: 245px;
     height: 33px;
+}
+.register .register_l .phoneNum,
+.register .register_l .setPassword,
+.register .register_l .confirmPassword{
+    width: 244px;
     border:1px solid #ccc ;
 }
-.register .register_l .code{
-    width: 145px;
-    height: 33px;
+.register .register_l .code,
+.register .register_l .getRandom{
+    width: 144px;
     border:1px solid #ccc ;
 }
-.register .register_l #codeOutput{
+.register .register_l .codeOutput{
     width: 100px;
     height: 33px;
-    border:1px solid #ccc ;
+    background-color: pink;
+    padding-top: 14px;
+}
+.register .register_l #getRandomBtn{
+    background-color:#DC0F50 ;
+    width: 86px;
+    float: right;
+}
+.register .register_l p{
+    font-size: 10px;
+    padding-left: 16px;
+}
+.register .register_l #registerBtn{
+    width: 244px;
+    float: right;
+    background-color: #DC0F50;
+}
+.register .register_l .jump{
+    float: right;
+    text-decoration: underline;
 }

@@ -48,11 +48,14 @@
 						<span class="fl">用户登录</span><span class="fr">快捷登录</span>
 					</div>
 					<div class="useLogin_content">
-						<input type="text" id="usename" placeholder="请输入11位手机号码"/>
+						<input type="text" id="useName" placeholder="请输入11位手机号码"/>
 						<input type="text"  id="usePassword" value="请输入密码" />
-						<input type="checkbox"  id="useCheckbox"/>
-						<span>下次自动登录</span><span>重置密码</span><span>新用户注册</span>
-						<input type="button" value="登录"/>
+						
+						<div class="loginRow">
+							<input type="checkbox" class="fl" id="useCheckbox"/>
+							<span class="autoBtn fl">下次自动登录</span><span class="resetBtn fl">重置密码</span><span class="fr">新用户注册</span>
+						</div>
+						<input type="button" id="loginBtn" value="登录"/>
 					</div>
 				</div>
 			</div>

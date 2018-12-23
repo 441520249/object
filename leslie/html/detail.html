@@ -3,7 +3,99 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" href="../css/detail.css" />
 	</head>
 	<body>
+		<!--头顶-->
+		<div id="wrap_top">
+			<div class="wrap_top con">
+				<a class="collection fl" onclick="FavoritesOperator.Add();">收藏</a>
+				<div class="wrap_top_left fr">
+					<a href="../index.html" target="_self">首页</a>
+					<a href="login.html" id="topLogin">请登录</a>
+					<a class="on" id="topLoginName" style="display:none;"></a>
+					<a onclick="UserInfo.Logout();" id="topLoginOut" style="display:none;">退出</a>
+					<a href="register.html" id="topRegister">免费注册</a>
+					<span>|</span>
+					<a id="fontShoppingCart">购物车<span id="shoppingCartNum">0</span>件</a>
+					<a id="myJY">我的家有</a>
+					<a id="fontDiscount">可用优惠劵<span id="discountNum">0</span>张</a>
+					<a id="myFavourites">我的收藏</a><span>|</span>
+					<a href="#">手机版</a>
+					<a href="#">微信版</a>
+				</div>
+			</div>
+		</div>
+		<!--header-->
+		<div id="header">
+			<div class="header con">
+				<div class="header_l fl">
+					<a href="../index.html"><img src="../images/index/index_logo.jpg"/></a>
+				</div>
+				<div class="header_c fl">
+					<input class="header_inpText" type="text" name="" id="" value="" /><input class="header_inpBtn" type="button" name="header_inpBtn" id="header_inpBtn" value="搜索" />
+					<a href="#">破壁机</a><a href="#">羽绒服</a><a href="#">女装</a><a href="#">京城之霜</a><a href="#">如家床垫</a><a href="#">燕窝</a><a href="#">函数</a><a href="#">白酒</a><a href="#">顺利人</a>
+				</div>
+				<div class="header_r fl">
+					<div class="shopCar">
+						<span>我的购物车</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--nav-->
+		<div id="nav">
+			<ul class="nav con">
+				<li class="allgoodsli">
+					<a href="#">全部商品分类</a>
+				</li>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">直播TV</a>
+				</li>
+				<li>
+					<a href="#">品牌惠</a>
+				</li>
+				<li>
+					<a href="#">惠家友APP</a>
+				</li>
+				<li>
+					<a href="#">家有尊享</a>
+				</li>
+			</ul>
+		</div>
+		<div id="detail">
+			<div class="detail con">
+				<div class="detail_t"></div>
+				<div class="detail_b">
+					<div class="detail_b_banner fl"></div>
+					<div class="detail_b_img fl">
+						<img src="../images/detail/detail_goods.png"/>
+					</div>
+					<div class="detail_b_news fl">
+						<div class="detail_b_news_header">洁玉毛巾秒杀组</div>
+					<dl class="detail_b_news_content">
+						<dt>￥229.00</dt>
+						<dd><span>商品编码</span>213131</dd>
+						<dd><span>月销</span>123件</dd>
+						<dd><span>促销</span>66折</dd>
+						<dd><span>购买数量</span>123</dd>
+						<dd><span>正品保障</span><span>全场包邮</span><span>支持7日无理由退货</span></dd>
+						<dd><span id="getBuycar">加入购物车</span><span id="goShop">立即购买</span>拨打<span>4008-678-888</span>，可以语音下单</dd>
+					</dl>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer-->
+		<div id="footer">
+			<div class="footer con">
+				<img src="../images/index/footer.png"/>
+			</div>
+		</div>
 	</body>
 </html>

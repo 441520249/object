@@ -1,0 +1,183 @@
+#nav {
+  height: 37px;
+  border-bottom: 3px solid #DC0F50;
+}
+
+.nav li {
+  height: 34px;
+  float: left;
+  padding-left: 40px;
+}
+
+.nav .allgoodsli {
+  width: 188px;
+  background-color: #000000;
+}
+
+.nav .allgoodsli a {
+  color: #fff;
+}
+
+.nav li a {
+  font-size: 12px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.settlement {
+  padding: 0 24px;
+}
+
+.settlement .settlement_t {
+  height: 42;
+  font-size: 14px;
+  line-height: 42px;
+  background: url(../images/car/car_Package_mail.png) no-repeat 0 14px;
+  padding-left: 38px;
+}
+
+.settlement .settlement_c .settlement_c_header {
+  height: 38px;
+  background-color: #F1F1F1;
+  border: 1px solid #9D9D9D;
+  padding-left: 20px;
+}
+
+.settlement .settlement_c .settlement_c_header span {
+  font-size: 12px;
+  line-height: 38px;
+}
+
+.settlement .settlement_c .settlement_c_header span:nth-child(2) {
+  margin-right: 200px;
+}
+
+.settlement .settlement_c .settlement_c_header span:nth-child(3) {
+  margin-right: 250px;
+}
+
+.settlement .settlement_c .settlement_c_header span:nth-child(4) {
+  margin-right: 75px;
+}
+
+.settlement .settlement_c .settlement_c_header span:nth-child(5) {
+  margin-right: 60px;
+}
+
+.settlement .settlement_c .settlement_c_header span:nth-child(6) {
+  margin-right: 40px;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods {
+  width: 912px;
+  height: 90px;
+  background-color: skyblue;
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods .inp {
+  width: 50px;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods .img {
+  padding-top: 14px;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods .con {
+  width: 250px;
+  padding-left: 10px;
+  line-height: 40px;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods .style {
+  width: 150px;
+  padding-top: 30px;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods .price {
+  width: 120px;
+  padding-top: 30px;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods .quantity {
+  width: 97px;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods .quantity .btn {
+  width: 52px;
+  height: 20px;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods .quantity .btn input {
+  width: 12px;
+  height: 18px;
+  vertical-align: top;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods .quantity .btn input:nth-child(1) {
+  border-right: 1px solid #ccc;
+  float: left;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods .quantity .btn input:nth-child(3) {
+  border-left: 1px solid #ccc;
+  float: right;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods .quantity .btn span {
+  width: 28px;
+  height: 20px;
+  vertical-align: top;
+  font-size: 10px;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods .total {
+  padding-top: 30px;
+  color: red;
+  width: 50px;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods .delete {
+  padding-top: 30px;
+  margin-left: 50px;
+}
+
+.settlement .settlement_b {
+  height: 110px;
+  padding-top: 30px;
+  background-color: green;
+}
+
+.settlement .settlement_b span:nth-child(2) {
+  margin-right: 15px;
+}
+
+.settlement .settlement_b span:nth-child(3) {
+  margin-right: 320px;
+}
+
+.settlement .settlement_b span:nth-child(4) {
+  margin-right: 40px;
+}
+
+.settlement .settlement_b span:nth-child(6) {
+  color: red;
+  font-size: 26px;
+}
+
+.settlement .settlement_b span:nth-child(7) {
+  float: right;
+  width: 90px;
+  height: 43px;
+  background-color: red;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 43px;
+}
