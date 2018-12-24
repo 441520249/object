@@ -98,11 +98,11 @@
   background-color: #000000;
 }
 
-.nav .allgoodsli a {
+.nav .allgoodsli span {
   color: #fff;
 }
 
-.nav li a {
+.nav li span {
   font-size: 12px;
   line-height: 34px;
   color: #000000;

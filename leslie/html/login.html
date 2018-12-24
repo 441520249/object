@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
 		<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+
 	<body>
 		<!--头顶-->
 		<div id="wrap_top">
 			<div class="wrap_top con">
-                <a class="collection fl" onclick="FavoritesOperator.Add();">收藏</a>
-                <div class="wrap_top_left fr">
-                <a href="../index.html" target="_self">首页</a><a href="login.html" id="topLogin">请登录</a>
-                <a class="on" id="topLoginName" style="display:none;"></a>
-                <a onclick="UserInfo.Logout();" id="topLoginOut" style="display:none;">退出</a>
-                <a href="register.html" id="topRegister">免费注册</a>
-                <span>|</span>
-                <a id="fontShoppingCart">购物车<span id="shoppingCartNum">0</span>件</a>
-                <a id="myJY">我的家有</a>
-                <a id="fontDiscount">可用优惠劵<span id="discountNum">0</span>张</a>
-                <a id="myFavourites">我的收藏</a><span>|</span>
-                <a href="#">手机版</a><a href="#">微信版</a>
-                </div>
-            </div>
-        </div>
+				<a class="collection fl" onclick="FavoritesOperator.Add();">收藏</a>
+				<div class="wrap_top_left fr">
+					<a href="../index.html" target="_self">首页</a>
+					<a href="login.html" id="topLogin">请登录</a>
+					<a class="on" id="topLoginName" style="display:none;"></a>
+					<a onclick="UserInfo.Logout();" id="topLoginOut" style="display:none;">退出</a>
+					<a href="register.html" id="topRegister">免费注册</a>
+					<span>|</span>
+					<a id="fontShoppingCart">购物车<span id="shoppingCartNum">0</span>件</a>
+					<a id="myJY">我的家有</a>
+					<a id="fontDiscount">可用优惠劵<span id="discountNum">0</span>张</a>
+					<a id="myFavourites">我的收藏</a><span>|</span>
+					<a href="#">手机版</a>
+					<a href="#">微信版</a>
+				</div>
+			</div>
+		</div>
 		<!--header-->
 		<div id="header">
 			<div class="header con">
 				<div class="header_l fl">
-					<a href="../index.html"><img src="../images/index/index_logo.jpg"/></a>
+					<a href="../index.html"><img src="../images/index/index_logo.jpg" /></a>
 				</div>
 				<div class="header_c fl">
 					<input class="header_inpText" type="text" name="" id="" value="" /><input class="header_inpBtn" type="button" name="header_inpBtn" id="header_inpBtn" value="搜索" />
-					<a href="#">破壁机</a><a href="#">羽绒服</a><a href="#">女装</a><a href="#">京城之霜</a><a href="#">如家床垫</a><a href="#">燕窝</a><a href="#">函数</a><a href="#">白酒</a><a href="#">顺利人</a>
+					<a href="#">破壁</a>
+					<a href="#">羽荣</a>
+					<a href="#">女装</a>
+					<a href="#">京城</a>
+					<a href="#">如家</a>
+					<a href="#">燕窝</a>
+					<a href="#">函数</a>
+					<a href="#">白酒</a>
+					<a href="#">顺利</a>
 				</div>
 				<div class="header_r fl">
 					<div class="shopCar">
@@ -57,24 +69,23 @@
 						<span class="fl">用户登录</span><span class="fr">快捷登录</span>
 					</div>
 					<div class="useLogin_content">
-						<input type="text" id="useName" placeholder="请输入11位手机号码"/>
-						<input type="text"  id="usePassword" value="请输入密码" />
-						
+						<input type="text" id="useName" placeholder="请输入11位手机号码" />
+						<input type="text" id="usePassword" placeholder="请输入密码" />
 						<div class="loginRow">
-							<input type="checkbox" class="fl" id="useCheckbox"/>
-							<span class="autoBtn fl">下次自动登录</span><span class="resetBtn fl">重置密码</span><span class="fr">新用户注册</span>
+							<input type="checkbox" class="fl" id="useCheckbox" />
+							<span class="autoBtn fl">下次自动登录</span><span class="resetBtn fl">重置密码</span><span class="fr"><a href="register.html">新用户注册</a></span>
 						</div>
-						<input type="button" id="loginBtn" value="登录"/>
+						<input type="button" id="loginBtn" value="登录" />
 					</div>
 				</div>
 			</div>
 		</div>
-		
 		<!--footer-->
 		<div id="footer">
 			<div class="footer con">
-				<img src="../images/index/footer.png"/>
+				<img src="../images/index/footer.png" />
 			</div>
 		</div>
 	</body>
+
 </html>

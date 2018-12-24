@@ -9,6 +9,11 @@
   width: 330px;
 }
 
+.register .register_l #phoneOutput {
+  padding-left: 80px;
+  color: red;
+}
+
 .register .register_l li {
   margin-bottom: 14px;
 }

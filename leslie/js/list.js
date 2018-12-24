@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded",function(){
-	var box = document.getElementsByClassName("box")[0];
+	var box = document.getElementsByClassName("list_l_content_c")[0];
 	var goodsarr = [];
 	$.ajax({
 		type: "get",
