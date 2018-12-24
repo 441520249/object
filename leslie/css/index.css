@@ -135,6 +135,11 @@
   color: #000000;
 }
 
+.banner .banner_c_t .box {
+  width: 572px;
+  height: 306px;
+}
+
 .banner .banner_r_c {
   margin-right: 8px;
 }

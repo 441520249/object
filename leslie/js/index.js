@@ -22,5 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 	};
 	//
-	
+	//轮播图
+    $('.carousel').carousel({
+      interval: 2000
+    })
+					
 })
