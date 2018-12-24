@@ -19,6 +19,7 @@
 .header {
   height: 104px;
   background-color: pink;
+  position: relative;
 }
 
 .header .header_l {
@@ -50,19 +51,36 @@
   padding-right: 10px;
   color: #C0C0C0;
 }
+
 .header .header_r {
-	padding-top: 25px;
-	padding-left: 125px;
+  padding-top: 25px;
+  padding-left: 125px;
 }
-.header .header_r .shopCar{
-	width: 98px;
-	height: 36px;
-	border:1px solid #ccc ;
-	text-align: center;
+
+.header .header_r .shopCar {
+  width: 98px;
+  height: 36px;
+  border: 1px solid #ccc;
+  text-align: center;
 }
-.header .header_r .shopCar span{
-	font-size: 12px;
-	line-height: 36px;
+
+.header .header_r .shopCar span {
+  font-size: 12px;
+  line-height: 36px;
+}
+
+.header .bian {
+  width: 52px;
+  height: 160px;
+  position: fixed;
+  top: 300px;
+  left: 50%;
+  margin-left: 490px;
+  cursor: pointer;
+}
+
+.header #live {
+  display: none;
 }
 
 .nav {
@@ -89,9 +107,11 @@
   line-height: 34px;
   color: #000000;
 }
-#banner{
-    border-top:2px solid #DC0F50;
+
+#banner {
+  border-top: 2px solid #DC0F50;
 }
+
 .banner {
   height: 448px;
   background-color: pink;
