@@ -118,6 +118,25 @@
   font-size: 12px;
   line-height: 38px;
   text-align: center;
+  position: relative;
+}
+
+.list_l .list_l_content_t li .shang {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  width: 12px;
+  height: 20px;
+  background: url(../lib/jquery-ui-1.12.1/images/ui-icons_cc0000_256x240.png) no-repeat 0 -48px;
+}
+
+.list_l .list_l_content_t li .xia {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  width: 12px;
+  height: 20px;
+  background: url(../lib/jquery-ui-1.12.1/images/ui-icons_cc0000_256x240.png) no-repeat -64px -48px;
 }
 
 .list_l .list_l_content_c .box {

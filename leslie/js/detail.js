@@ -1,4 +1,75 @@
 document.addEventListener("DOMContentLoaded",function(){
+	var mainShopImg = document.getElementById("mainShopImg");
+	var shopName = document.getElementsByClassName("detail_b_news_header")[0];
+	var price = document.getElementsByClassName("price")[0];
+	var sales = document.getElementsByClassName("sales")[0];
+	var discount = document.getElementsByClassName("discount")[0];
+	
+	var gid = location.search.slice(1).split("=")[1];
+	console.log(location.search)
+	console.log(gid)
+	//1.创建异步请求对象
+	var xhr = new XMLHttpRequest();
+	var lctSrcObj = {};
+	//4.等待响应数据解析完毕，处理服务器返回数据 
+	var status = [200, 304];
+	xhr.onreadystatechange = function(){
+		if(xhr.readyState == 4 && status.indexOf(xhr.status) != -1){
+		lctSrcObj = JSON.parse(xhr.responseText)[0];
+		console.log(lctSrcObj)
+		mainShopImg.src = lctSrcObj.url;
+		shopName.innerHTML = lctSrcObj.goodname;
+		price.innerHTML = lctSrcObj.price;
+		sales.innerHTML = lctSrcObj.sales;
+		discount.innerHTML = lctSrcObj.discount;
+		}
+	}
+	//2.建立与服务器连接,设置请求参数 open(type,url,async)
+	xhr.open("get", `../api/detail.php?gid=${gid}`, true);
+	// 3.发送请求 send()
+	xhr.send(null);
+
+
+
+
+
+
+
+
+
+
+
+//	if(Cookie.getCookie("cartList")) {
+//		var cartArr = JSON.parse(Cookie.getCookie("cartList"));
+//	} else {
+//		var cartArr = [];
+//	}
+//	var lctSrcObj = {};
+//	console.log(location.search)
+//	var gid = location.search.slice(1).split("=")[1];
+//	
+//	//1.创建异步请求对象
+//	var xhr = new XMLHttpRequest();
+//	var lctSrcObj = {};
+//	//4.等待响应数据解析完毕，处理服务器返回数据 
+//	var status = [200, 304];
+//	xhr.onreadystatechange = function() {
+//		console.log(66)
+//		if(xhr.readyState == 4 && status.indexOf(xhr.status) != -1) {
+//			lctSrcObj = JSON.parse(xhr.responseText)[0];
+//			console.log(lctSrcObj.imgurl);
+//	
+//	}
+//	
+//	//2.建立与服务器连接,设置请求参数 open(type,url,async)
+//	xhr.open("get", `../api/detail.php?id=${id}`, true);
+//	// 3.发送请求 send()
+//	xhr.send(null);
+//	}
+	
+	
+	
+	//放大镜
 	 jQuery(function($){
             var $ampBox=$("#ampBox");
             var $img=$("#ampBox img");
@@ -32,4 +103,6 @@ document.addEventListener("DOMContentLoaded",function(){
 
             })
         })
+
+
 })
