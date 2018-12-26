@@ -7,7 +7,9 @@
 		<link rel="stylesheet" type="text/css" href="../css/base.css" />
 		<link rel="stylesheet" type="text/css" href="../css/public.css" />
 		<link rel="stylesheet" href="../css/car.css" />
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/car.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -94,8 +96,8 @@
 					<div class="settlement_c_header">
 						<input type="checkbox" id="checkboxAll" /><span>全选</span><span>商品</span><span>单价（元）</span><span>数量</span><span>小计（元）</span><span>操作</span>
 					</div>
-					<div class="settlement_c_content">
-						<div class="carGoods">
+					<ul class="settlement_c_content">
+						<li class="carGoods">
 							<div class="inp fl"><input type="checkbox" id="checkboxBtn" /></div>
 							<div class="img fl"><img src="../images/car/car_goods.png" /></div>
 							<div class="con fl">
@@ -114,11 +116,11 @@
 									<input type="button" class="jia" value="+">
 								</div>
 							</div>
-							<div class="total fl">3399.00</div>
+							<div class="total fl"></div>
 							<div class="delete fl">删除</div>
-						</div>
-
-					</div>
+						</li>
+						
+					</ul>
 				</div>
 				<div class="settlement_b">
 					<input type="checkbox" name="checkedAll" id="checkedAll" /><span>全选</span><span>删除选中的商品</span>

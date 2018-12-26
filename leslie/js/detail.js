@@ -31,16 +31,31 @@ document.addEventListener("DOMContentLoaded",function(){
 	// 3.发送请求 send()
 	xhr.send(null);
 
-	var arr = [];
-	var getBuycar = document.getElementById("getBuycar");
-	getBuycar.onclick = function(){
-		arr.push(lctSrcObj)
-		Cookie.setCookie("goodslist",JSON.stringify(arr));
-	}
-	
 
-	
-	
+	//购物车
+	var getBuycar = document.getElementById("getBuycar");
+	var arr = Cookie.getCookie("goodslist") || [];
+        if(typeof arr == "string"){
+            arr = JSON.parse(arr);
+        }
+	getBuycar.onclick = function(){
+		lctSrcObj.qty = 1;
+		var gid = lctSrcObj.id;
+		var i;
+		var res = arr.find(function(item,idx){
+			i = idx;
+			return item.id == gid
+		});
+		if(res){
+			arr[i].qty++;
+		}else{
+			arr.push(lctSrcObj)
+		}
+		Cookie.setCookie("goodslist",JSON.stringify(arr));
+		console.log(lctSrcObj)
+		console.log(arr)
+	}
+		
 	
 	//放大镜
 	 jQuery(function($){

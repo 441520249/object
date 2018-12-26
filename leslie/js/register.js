@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded",function(){
 	            }
 	        }
 	        console.log(phoneNum.value,setPassword.value)
-		xhr.open('get',`../api/register.php?phoneNum = ${phoneNum.value}&setPassword = ${setPassword.value}&register=${register}`,true);
+		xhr.open('get',`../api/register.php?phoneNum=${phoneNum.value}&setPassword=${setPassword.value}&register=${register}`,true);
 		xhr.send(null);   
 	}
 	

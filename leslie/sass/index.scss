@@ -12,8 +12,6 @@
 .wrap_top a{
     margin-right: 12px;
 }
-
-
 .header{
     height: 104px;
     background-color: pink;
@@ -105,34 +103,62 @@
     width: 186px;
     border:1px solid #ccc ;
     margin-right: 6px;
+
 }
-.banner .banner_l li{
+.banner .banner_l>li{
     width: 188px;
     height: 32px;
     padding-left: 17px;
+    position: relative;
 }
-.banner .banner_l li a{
-    font-size: 12px;
+.banner .banner_l>li span{
+    font-size: 16px;
     line-height: 32px;
-    color: #000000;
 }
+.banner .banner_l>li:hover{
+    color:#DC0F50 ;
+    background-color: #ccc;
+}
+.banner .banner_l>li:hover .navBox{
+    display: block;
+}
+.banner .banner_l>li .navBox{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 190px;
+    width: 600px;
+    background-color: #fff;
+    z-index: 16;
+}
+.banner .banner_l>li .navBox a {
+    padding: 0 30px;
+    font-size: 14px;
+    line-height: 28px;
+}
+.banner .banner_l>li .navBox .nav_l{
+    width: 150px;
+    height: 100px;
+    
+}
+.banner .banner_l>li .navBox .nav_l a{
+    color: #000;
+}
+.banner .banner_l>li .navBox .nav_r{
+    width: 450px;
+    height: 100px;
+    
+}
+.banner .banner_l>li .navBox .nav_r a{
+    color: #9D9D9D;
+}
+
+
+
 .banner .banner_c_t .box{
     width: 572px;
     height: 306px;
-    }
-//.banner .banner_c_t{
-//  width: 572px;
-//  height: 306px;
-//  position: relative;
-//  overflow: hidden;
-//  background-color: red;
-//}
-//.banner .banner_box{
-//  text-align: center;
-//  position: absolute;
-//  right: 20px;
-//  bottom: 20px;
-//}
+}
 .banner .banner_r_c{
     margin-right: 8px;
 }

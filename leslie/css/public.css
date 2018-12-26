@@ -22,6 +22,7 @@
 .header {
   height: 104px;
   background-color: pink;
+  position: relative;
 }
 
 .header .header_l {
@@ -78,7 +79,7 @@
 	top: 31px;
 	right: 0px;
 	z-index: 1;
-	/*display: none;*/
+	display: none;
 }
 .header .header_r .shopCar:hover .shopCarbox{
 	display: block;
@@ -106,3 +107,26 @@
 .header #live {
   display: none;
 }
+.nav{
+    height: 34px;
+}
+.nav li{
+    height: 34px;
+    float: left;
+    padding-left: 40px;
+}
+.nav .allgoodsli{
+    width: 188px;
+    background-color: #000000;
+
+}
+.nav li span{
+    font-size: 12px;
+    line-height: 34px;
+    color: #000000;
+    cursor: pointer;
+}
+.nav .allgoodsli span{
+    color: #fff;
+    cursor: pointer;
+}   

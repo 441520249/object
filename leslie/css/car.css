@@ -81,7 +81,15 @@
 }
 
 .settlement .settlement_c .settlement_c_content .carGoods .img {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
   padding-top: 14px;
+}
+
+.settlement .settlement_c .settlement_c_content .carGoods img {
+  width: 100%;
+  height: 100%;
 }
 
 .settlement .settlement_c .settlement_c_content .carGoods .con {
@@ -146,6 +154,7 @@
 .settlement .settlement_c .settlement_c_content .carGoods .delete {
   padding-top: 30px;
   margin-left: 50px;
+  float: left;
 }
 
 .settlement .settlement_b {
