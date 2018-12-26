@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded",function(){
 		price.innerHTML = lctSrcObj.price;
 		sales.innerHTML = lctSrcObj.sales;
 		discount.innerHTML = lctSrcObj.discount;
+		
+		
 		}
 	}
 	//2.建立与服务器连接,设置请求参数 open(type,url,async)
@@ -29,43 +31,14 @@ document.addEventListener("DOMContentLoaded",function(){
 	// 3.发送请求 send()
 	xhr.send(null);
 
+	var arr = [];
+	var getBuycar = document.getElementById("getBuycar");
+	getBuycar.onclick = function(){
+		arr.push(lctSrcObj)
+		Cookie.setCookie("goodslist",JSON.stringify(arr));
+	}
+	
 
-
-
-
-
-
-
-
-
-
-//	if(Cookie.getCookie("cartList")) {
-//		var cartArr = JSON.parse(Cookie.getCookie("cartList"));
-//	} else {
-//		var cartArr = [];
-//	}
-//	var lctSrcObj = {};
-//	console.log(location.search)
-//	var gid = location.search.slice(1).split("=")[1];
-//	
-//	//1.创建异步请求对象
-//	var xhr = new XMLHttpRequest();
-//	var lctSrcObj = {};
-//	//4.等待响应数据解析完毕，处理服务器返回数据 
-//	var status = [200, 304];
-//	xhr.onreadystatechange = function() {
-//		console.log(66)
-//		if(xhr.readyState == 4 && status.indexOf(xhr.status) != -1) {
-//			lctSrcObj = JSON.parse(xhr.responseText)[0];
-//			console.log(lctSrcObj.imgurl);
-//	
-//	}
-//	
-//	//2.建立与服务器连接,设置请求参数 open(type,url,async)
-//	xhr.open("get", `../api/detail.php?id=${id}`, true);
-//	// 3.发送请求 send()
-//	xhr.send(null);
-//	}
 	
 	
 	

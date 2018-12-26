@@ -15,7 +15,10 @@
 .wrap_top a {
   margin-right: 12px;
 }
-
+.wrap_top #topLoginName,
+.wrap_top #topLoginOut{
+  display: none;
+}
 .header {
   height: 104px;
   background-color: pink;
@@ -53,16 +56,43 @@
 .header .header_r {
     padding-top: 25px;
     padding-left: 125px;
+    position: relative;
 }
 .header .header_r .shopCar{
     width: 98px;
     height: 36px;
     border:1px solid #ccc ;
     text-align: center;
+    position: relative;
 }
 .header .header_r .shopCar span{
     font-size: 12px;
     line-height: 36px;
+
+}
+.header .header_r .shopCar .shopCarbox{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	position: absolute;
+	top: 31px;
+	right: 0px;
+	z-index: 1;
+	/*display: none;*/
+}
+.header .header_r .shopCar:hover .shopCarbox{
+	display: block;
+}
+.header .header_r .shopCar .shopCarbox p{
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 800;
+	text-align: left;
+}
+.header .header_r .shopCar .shopCarbox .shopCarbox_footer{
+	width: 200px;
+	height: 50px;
+	background-color: #ccc;
 }
 .header .bian{
     width: 52px;

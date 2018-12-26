@@ -7,6 +7,7 @@
 		<base href="html/" />
 		<link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/public.css" />
 		<link rel="stylesheet" type="text/css" href="../css/index.css" />
 		<script type="text/javascript" src="../lib/jquery-3.2.1.js"></script>
 		<script src="../lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -23,8 +24,8 @@
 				<div class="wrap_top_left fr">
 					<a href="../index.html" target="_self">首页</a>
 					<a href="login.html" id="topLogin">请登录</a>
-					<a class="on" id="topLoginName" style="display:none;"></a>
-					<a onclick="UserInfo.Logout();" id="topLoginOut" style="display:none;">退出</a>
+					<a id="topLoginName">12312312312</a>
+					<a id="topLoginOut">退出</a>
 					<a href="register.html" id="topRegister">免费注册</a>
 					<span>|</span>
 					<a id="fontShoppingCart">购物车<span id="shoppingCartNum">0</span>件</a>
@@ -56,8 +57,17 @@
 				</div>
 				<div class="header_r fl">
 					<div class="shopCar">
-						<span>我的购物车</span>
+						<span>我的购物车
+						<div class="shopCarbox">
+							<p>最新加入商品</p>
+							<div class="shopCarbox_content">
+								
+							</div>
+							<div class="shopCarbox_footer"></div>
+						</div>
+						</span>
 					</div>
+					
 				</div>
 				<div class="bian">
 					<img src="../images/index/shouji.png" />

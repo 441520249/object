@@ -67,12 +67,16 @@ document.addEventListener("DOMContentLoaded", function() {
 					}
 				}
 			}	
-			
-			
-			
-				
+		
 		}
 	})
-
+	
+	
+	
+	
+	
+	
+	
+	
 
 })
