@@ -7,9 +7,9 @@
 		<link rel="stylesheet" type="text/css" href="../css/base.css" />
 		<link rel="stylesheet" type="text/css" href="../css/public.css" />
 		<link rel="stylesheet" href="../css/detail.css" />
+		<script type="text/javascript" src="../lib/jquery-3.2.1.js"></script>
 		<script src="../js/common.js"></script>
 		<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript" src="../lib/jquery-3.2.1.js"></script>
 		<script src="../js/detail.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
@@ -117,9 +117,16 @@
 							<dd><span>商品编码</span>213131</dd>
 							<dd><span>月销</span><i class="sales">123</i>件</dd>
 							<dd><span>促销</span><i class="discount"></i>折</dd>
-							<dd><span>购买数量</span>1</dd>
+							<dd>
+								<span>购买数量</span>
+									<div class="btn">
+										<input type="button" class="jian" value="-">
+										<span class="shuliang">1</span>
+										<input type="button" class="jia" value="+">
+									</div>
+							</dd>
 							<dd><span>正品保障</span><span>全场包邮</span><span>支持7日无理由退货</span></dd>
-							<dd><a href="car.html"><span id="getBuycar">加入购物车</span></a><span id="goShop">立即购买</span>拨打<span>4008-678-888</span>，可以语音下单</dd>
+							<dd><span id="getBuycar">加入购物车</span><a href="car.html"><span id="goShop">立即购买</span></a>拨打<span>4008-678-888</span>，可以语音下单</dd>
 						</dl>
 					</div>
 				</div>

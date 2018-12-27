@@ -61,7 +61,11 @@
     border: 1px solid #ccc;
     overflow: hidden;
 }
-
+.clone-img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
 #ampBox img,
 .imgBox img {
     display: block;
@@ -97,6 +101,17 @@
         dd {
             font-size: 12px;
             line-height: 32px;
+            .btn{
+                display: inline-block;
+                .jia,.jian{
+                    width: 20px;
+                    height: 20px;
+                }
+                .shuliang{
+                    width: 20px;
+                    text-align: center;
+                }
+            }
         }
         span {
             display: inline-block;

@@ -14,8 +14,7 @@
 //      echo "连接成功";
 		
 		$gid = isset($_GET["gid"])? $_GET["gid"]: 5;//先问有没qty，获取qty或者5条
-		//编写sql语句
-	
+		//编写sql语句	
     //获取查询结果集
 //  $result = $conn->query($sql);
 	$result = $conn->query('select * from goodslist where id="'.$gid.'"');
@@ -31,8 +30,4 @@
 
     // 关闭数据库，避免资源浪费
     $conn->close();	
-    
-    
-    
-
 ?>

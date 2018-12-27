@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded",function(){
 	
 	var gid = location.search.slice(1).split("=")[1];
 	console.log(location.search)
-	console.log(gid)
 	//1.创建异步请求对象
 	var xhr = new XMLHttpRequest();
 	var lctSrcObj = {};
@@ -16,14 +15,12 @@ document.addEventListener("DOMContentLoaded",function(){
 	xhr.onreadystatechange = function(){
 		if(xhr.readyState == 4 && status.indexOf(xhr.status) != -1){
 		lctSrcObj = JSON.parse(xhr.responseText)[0];
-		console.log(lctSrcObj)
+		//渲染
 		mainShopImg.src = lctSrcObj.url;
 		shopName.innerHTML = lctSrcObj.goodname;
 		price.innerHTML = lctSrcObj.price;
 		sales.innerHTML = lctSrcObj.sales;
 		discount.innerHTML = lctSrcObj.discount;
-		
-		
 		}
 	}
 	//2.建立与服务器连接,设置请求参数 open(type,url,async)
@@ -33,13 +30,29 @@ document.addEventListener("DOMContentLoaded",function(){
 
 
 	//购物车
+	var shopCar = document.getElementsByClassName("shopCar")[0];
+	var jia = document.getElementsByClassName("jia")[0];
+	var jian = document.getElementsByClassName("jian")[0];
+	var shuliang = document.getElementsByClassName("shuliang")[0];
+	var qtyd = 1;
+	jia.onclick = function(){
+		qtyd++
+		shuliang.innerHTML = qtyd;
+	}
+	jian.onclick = function(){
+		if(qtyd > 1){
+			qtyd--
+		}
+		shuliang.innerHTML = qtyd;
+	}
 	var getBuycar = document.getElementById("getBuycar");
 	var arr = Cookie.getCookie("goodslist") || [];
         if(typeof arr == "string"){
             arr = JSON.parse(arr);
         }
 	getBuycar.onclick = function(){
-		lctSrcObj.qty = 1;
+		lctSrcObj.qty = shuliang.innerHTML ;
+		console.log(lctSrcObj.qty)
 		var gid = lctSrcObj.id;
 		var i;
 		var res = arr.find(function(item,idx){
@@ -47,13 +60,21 @@ document.addEventListener("DOMContentLoaded",function(){
 			return item.id == gid
 		});
 		if(res){
-			arr[i].qty++;
+			arr[i].qty = arr[i].qty*1+lctSrcObj.qty*1;
 		}else{
 			arr.push(lctSrcObj)
 		}
 		Cookie.setCookie("goodslist",JSON.stringify(arr));
-		console.log(lctSrcObj)
-		console.log(arr)
+		
+		//飞去购物车
+		var cloneImg = mainShopImg.cloneNode();
+		cloneImg.classList.add('clone-img');
+		cloneImg.style.left = mainShopImg.offsetLeft+400 + 'px';
+        cloneImg.style.top = mainShopImg.offsetTop+400 + 'px';
+        document.body.appendChild(cloneImg);
+        animation(cloneImg,{left:shopCar.offsetLeft+200,top:shopCar.offsetTop},30,function(){
+        	document.body.removeChild(cloneImg);
+        });
 	}
 		
 	
@@ -88,9 +109,10 @@ document.addEventListener("DOMContentLoaded",function(){
                 }
                 $sp.css({left:$ox,top:$oy});
                 $imgBig.css({marginTop:-$oy*scale,marginLeft:-$ox*scale});
-
             })
         })
+
+
 
 
 })

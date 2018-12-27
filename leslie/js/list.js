@@ -6,8 +6,6 @@ window.addEventListener("DOMContentLoaded",function(){
 		url: "../api/list.php",
 		async: true,
 		success: function(goodslist) {
-			
-			
 			goodsarr = JSON.parse(goodslist);
 	//		console.log(goods)
 			console.log(goodsarr);//拿到后端40天数据
@@ -158,8 +156,6 @@ window.addEventListener("DOMContentLoaded",function(){
 					}
 				}
 			}
-			
-			
 
 		}
 	})

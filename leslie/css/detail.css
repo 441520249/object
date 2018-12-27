@@ -62,6 +62,12 @@
   overflow: hidden;
 }
 
+.clone-img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
 #ampBox img,
 .imgBox img {
   display: block;
@@ -101,6 +107,20 @@
 .detail .detail_b_news .detail_b_news_content dd {
   font-size: 12px;
   line-height: 32px;
+}
+
+.detail .detail_b_news .detail_b_news_content dd .btn {
+  display: inline-block;
+}
+
+.detail .detail_b_news .detail_b_news_content dd .btn .jia, .detail .detail_b_news .detail_b_news_content dd .btn .jian {
+  width: 20px;
+  height: 20px;
+}
+
+.detail .detail_b_news .detail_b_news_content dd .btn .shuliang {
+  width: 20px;
+  text-align: center;
 }
 
 .detail .detail_b_news .detail_b_news_content span {

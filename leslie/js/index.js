@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
       interval: 2000
     })
     
-    
     //渲染页面
     var gbox = document.getElementsByClassName("gbox")[0];
 	var goodsarr = [];
@@ -36,13 +35,11 @@ document.addEventListener("DOMContentLoaded", function() {
 		url: "../api/list.php",
 		async: true,
 		success: function(goodslist) {
-			
 			goodsarr = JSON.parse(goodslist);
 			console.log(goodsarr);//拿到后端40天数据
 			render(goodsarr);
 			var yuanarr = goodsarr.slice(0);
 			render(goodsarr.slice(0, 5));
-	
 			function render(arr){
 				gbox.innerHTML = arr.map(function(item){				
 					return `<li class="goods fl">
@@ -58,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function() {
 				//传递数据
 			function getImgUrlArr(){
 				var imgUrlArr = document.getElementsByClassName("imgUrl");
-				console.log(imgUrlArr)
 				for(var i = 0; i < imgUrlArr.length; i++) {
 					imgUrlArr[i].idx = i;
 					imgUrlArr[i].onclick = function(){
@@ -67,36 +63,40 @@ document.addEventListener("DOMContentLoaded", function() {
 					}
 				}
 			}	
-		
 		}
 	})
 	
-	
-	var topLogin = document.getElementById("topLogin");
-	var topLoginName = document.getElementById("topLoginName");
-	var topLoginOut = document.getElementById("topLoginOut");
-
-	var obj={};
-	var brr = document.cookie.split("; ");
-	console.log(brr)
-	brr.forEach(function(item){
-        var crr = item.split("=");
-        obj[crr[0]] =  crr[1]; 
-        console.log(obj)
-	})
-	topLoginName.innerHTML = obj.uname;
-	
-	topLogin.innerHTML = '登录'
-	topLoginOut.innerHTML = "退出";
-//	topLoginName.style.display = 'none'
-//	topLoginOut.style.display = 'none'
-	topLoginOut.onclick = function(){
-		topLogin.innerHTML = "登录";
-		topLoginName.innerHTML = '';
-		topLoginOut.innerHTML = "";
-		Cookie.delCookie("uname",'/')
-		Cookie.delCookie("upwd",'/')
-	}
+	//登录
+//	var topLogin = document.getElementById("topLogin");
+//	var topLoginName = document.getElementById("topLoginName");
+//	var topLoginOut = document.getElementById("topLoginOut");
+//
+//	var obj={};
+//	var brr = document.cookie.split("; ");
+//	console.log(brr)
+//	brr.forEach(function(item){
+//      var crr = item.split("=");
+//      obj[crr[0]] =  crr[1]; 
+//      console.log(obj)
+//	})
+//	if(document.cookie == ''){
+//		topLoginName.style.display = 'none'
+//		topLoginOut.style.display = 'none'
+//	}
+//	else if(document.cookie != ''){
+//		topLoginName.style.display = 'inline-block'
+//		topLoginOut.style.display = 'inline-block'
+//		topLoginName.innerHTML = obj.uname;
+//		topLoginOut.innerHTML = "退出";
+//		topLogin.style.display = 'none'
+//	}
+//	topLoginOut.onclick = function(){
+//		topLogin.innerHTML = "请登录";
+//		topLoginName.innerHTML = '';
+//		topLoginOut.innerHTML = "";
+//		Cookie.delCookie("uname",'/')
+//		Cookie.delCookie("upwd",'/')
+//	}
 	
 
 })
