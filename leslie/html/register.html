@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/register.css" />
 		<script type="text/javascript" src="../js/base.js"></script>
 		<script src="../js/register.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/gVerify.js"></script>
 	</head>
 
 	<body>
@@ -40,15 +41,15 @@
 				</div>
 				<div class="header_c fl">
 					<input class="header_inpText" type="text" name="" id="" value="" /><input class="header_inpBtn" type="button" name="header_inpBtn" id="header_inpBtn" value="搜索" />
-					<a href="#">破壁</a>
-					<a href="#">羽荣</a>
-					<a href="#">女装</a>
-					<a href="#">京城</a>
-					<a href="#">如家</a>
-					<a href="#">燕窝</a>
-					<a href="#">函数</a>
-					<a href="#">白酒</a>
-					<a href="#">顺利</a>
+					<a href="list.html">破壁</a>
+					<a href="list.html">羽绒</a>
+					<a href="list.html">女装</a>
+					<a href="list.html">京城</a>
+					<a href="list.html">如家</a>
+					<a href="list.html">燕窝</a>
+					<a href="list.html">函数</a>
+					<a href="list.html">白酒</a>
+					<a href="list.html">顺利</a>
 				</div>
 				<div class="header_r fl">
 					<div class="shopCar">
@@ -70,8 +71,10 @@
 					<li>
 						<div class="rbox"><i>*</i><span class="num">手机号</span></div><input class="phoneNum" type="text" placeholder="请输入11位有效手机号" /></li>
 					<li>
-						<div class="rbox"><i>*</i><span>图片验证码</span></div><input class="code" type="text" placeholder="请输入图片验证码" />
-						<div class="codeOutput fr"></div>
+						<div class="rbox"><i>*</i><span>图片验证码</span></div>
+						<input class="code" type="text" id="code_input" value="" placeholder="请输入图片验证码"/>
+						<div id="v_container" class="codeOutput fr"></div>
+						<button id="my_button">验证</button>
 					</li>
 					<li>
 						<div class="rbox"><i>*</i><span>设置密码</span></div><input class="setPassword" type="text" placeholder="请输入6-16个字符，不能加空格哦" /></li>

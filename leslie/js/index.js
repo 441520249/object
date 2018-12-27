@@ -72,11 +72,31 @@ document.addEventListener("DOMContentLoaded", function() {
 	})
 	
 	
+	var topLogin = document.getElementById("topLogin");
+	var topLoginName = document.getElementById("topLoginName");
+	var topLoginOut = document.getElementById("topLoginOut");
+
+	var obj={};
+	var brr = document.cookie.split("; ");
+	console.log(brr)
+	brr.forEach(function(item){
+        var crr = item.split("=");
+        obj[crr[0]] =  crr[1]; 
+        console.log(obj)
+	})
+	topLoginName.innerHTML = obj.uname;
 	
-	
-	
-	
-	
+	topLogin.innerHTML = '登录'
+	topLoginOut.innerHTML = "退出";
+//	topLoginName.style.display = 'none'
+//	topLoginOut.style.display = 'none'
+	topLoginOut.onclick = function(){
+		topLogin.innerHTML = "登录";
+		topLoginName.innerHTML = '';
+		topLoginOut.innerHTML = "";
+		Cookie.delCookie("uname",'/')
+		Cookie.delCookie("upwd",'/')
+	}
 	
 
 })

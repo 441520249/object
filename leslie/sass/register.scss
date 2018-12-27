@@ -1,63 +1,63 @@
-.register{
-    height: 468px;
-    background-color: yellow;
-    background: url(../images/login/login_logo.png) no-repeat 527px 108px;
-    padding: 66px 0 0 66px;
-}
-.register .register_l{
+.register {
+  height: 468px;
+  background-color: yellow;
+  background: url(../images/login/login_logo.png) no-repeat 527px 108px;
+  padding: 66px 0 0 66px;
+  .register_l {
     width: 330px;
-}
-.register .register_l #phoneOutput{
-    padding-left: 80px;
-    color: red;
-}
-.register .register_l li{
-    margin-bottom: 14px;
-}
-.register .register_l .rbox{
-    width: 70px;
-    height: 33px;
-    font-size: 10px;
-    line-height: 33px;
-    text-align: right;
-    display: inline-block;
-    margin-right: 11px;
-}
-.register .register_l input{
-    height: 33px;
-}
-.register .register_l .phoneNum,
-.register .register_l .setPassword,
-.register .register_l .confirmPassword{
-    width: 244px;
-    border:1px solid #ccc ;
-}
-.register .register_l .code,
-.register .register_l .getRandom{
-    width: 144px;
-    border:1px solid #ccc ;
-}
-.register .register_l .codeOutput{
-    width: 100px;
-    height: 33px;
-    background-color: pink;
-    padding-top: 14px;
-}
-.register .register_l #getRandomBtn{
-    background-color:#DC0F50 ;
-    width: 86px;
-    float: right;
-}
-.register .register_l p{
-    font-size: 10px;
-    padding-left: 16px;
-}
-.register .register_l #registerBtn{
-    width: 244px;
-    float: right;
-    background-color: #DC0F50;
-}
-.register .register_l .jump{
-    float: right;
-    text-decoration: underline;
+    #phoneOutput {
+      padding-left: 80px;
+      color: red;
+    }
+    li {
+      margin-bottom: 14px;
+    }
+    .rbox {
+      width: 70px;
+      height: 33px;
+      font-size: 10px;
+      line-height: 33px;
+      text-align: right;
+      display: inline-block;
+      margin-right: 11px;
+    }
+    input {
+      height: 33px;
+    }
+    .phoneNum, .setPassword, .confirmPassword {
+      width: 244px;
+      border: 1px solid #ccc;
+    }
+    .code, .getRandom {
+      width: 130px;
+      border: 1px solid #ccc;
+    }
+    .codeOutput {
+      width: 80px;
+      height: 33px;
+    }
+    #my_button{
+      width: 25px;
+      height: 33px;
+      background-color: #DC0F50;
+    }
+    #getRandomBtn {
+      background-color: #DC0F50;
+      width: 86px;
+      float: right;
+    }
+    p {
+      font-size: 10px;
+      padding-left: 16px;
+    }
+    #registerBtn {
+      width: 244px;
+      float: right;
+      background-color: #DC0F50;
+    }
+    .jump {
+      float: right;
+      text-decoration: underline;
+    }
+  }
 }

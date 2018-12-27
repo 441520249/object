@@ -1,120 +1,5 @@
-#wrap_top {
-  height: 24px;
-  background-color: #E5E5E5;
-}
-
-#wrap_top .con {
-  height: 24px;
-}
-
-.wrap_top {
-  font-size: 10px;
-  line-height: 24px;
-}
-
-.wrap_top a {
-  margin-right: 12px;
-}
-
-.header {
-  height: 104px;
-  background-color: pink;
-  position: relative;
-}
-
-.header .header_l {
-  width: 280px;
-  padding-top: 25px;
-}
-
-.header .header_c {
-  width: 400px;
-  padding-top: 25px;
-}
-
-.header .header_c .header_inpText {
-  border: 2px solid #DC0F50;
-  height: 36px;
-  width: 324px;
-}
-
-.header .header_c .header_inpBtn {
-  width: 76px;
-  height: 36px;
-  background-color: #DC0F50;
-  color: #fff;
-}
-
-.header .header_c a {
-  font-size: 12px;
-  line-height: 28px;
-  padding-right: 10px;
-  color: #C0C0C0;
-}
-
-.header .header_r {
-  padding-top: 25px;
-  padding-left: 125px;
-}
-
-.header .header_r .shopCar {
-  width: 98px;
-  height: 36px;
-  border: 1px solid #ccc;
-  text-align: center;
-}
-
-.header .header_r .shopCar span {
-  font-size: 12px;
-  line-height: 36px;
-}
-
-.header .bian {
-  width: 52px;
-  height: 160px;
-  position: fixed;
-  top: 300px;
-  left: 50%;
-  margin-left: 490px;
-  cursor: pointer;
-}
-
-.header #live {
-  display: none;
-}
-
-.nav {
-  height: 34px;
-}
-
-.nav li {
-  height: 34px;
-  float: left;
-  padding-left: 40px;
-}
-
-.nav .allgoodsli {
-  width: 188px;
-  background-color: #000000;
-}
-
-.nav .allgoodsli span {
-  color: #fff;
-}
-
-.nav li span {
-  font-size: 12px;
-  line-height: 34px;
-  color: #000000;
-}
-
-#banner {
-  border-top: 2px solid #DC0F50;
-}
-
 .banner {
   height: 448px;
-  background-color: pink;
 }
 
 .banner .banner_l {
@@ -243,7 +128,6 @@
 .shop_b {
   height: 240px;
   padding-top: 22px;
-  background-color: pink;
   margin-bottom: 18px;
 }
 
@@ -305,7 +189,6 @@
 
 .new {
   height: 476px;
-  background-color: pink;
 }
 
 .new .new_l {
@@ -365,13 +248,11 @@
 
 .new .new_r_img {
   height: 404px;
-  background-color: yellow;
 }
 
 .new .new_r_img .hotgoods {
   height: 80px;
   padding-top: 15px;
-  background-color: deepskyblue;
 }
 
 .new .new_r_img .hotgoods p {
@@ -394,7 +275,6 @@
   padding-top: 38px;
   font-size: 22px;
   margin-bottom: 24px;
-  background-color: yellow;
 }
 
 .goodsBanner .goodsBanner_t .line {
@@ -403,7 +283,6 @@
 
 .goodsBanner .goodsBanner_b {
   height: 256px;
-  background-color: pink;
 }
 
 .goodsBanner .goodsBanner_b #shop_lbtn {
@@ -418,7 +297,6 @@
 
 .goodsBanner .goodsBanner_b .goods {
   width: 182px;
-  background-color: yellow;
 }
 
 .goodsBanner .goodsBanner_b .goods p {

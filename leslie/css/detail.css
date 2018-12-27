@@ -26,7 +26,6 @@
 
 .detail .detail_t {
   height: 30px;
-  background-color: red;
 }
 
 .detail .detail_b {
@@ -37,7 +36,6 @@
 .detail .detail_b_banner {
   height: 460px;
   width: 93px;
-  background-color: blue;
 }
 
 .detail .detail_b_img {
@@ -45,7 +43,6 @@
   width: 368px;
   padding-top: 26px;
   margin-right: 36px;
-  background-color: yellow;
 }
 
 #ampBox {
@@ -65,7 +62,8 @@
   overflow: hidden;
 }
 
-#ampBox img, .imgBox img {
+#ampBox img,
+.imgBox img {
   display: block;
   width: 100%;
 }
@@ -81,14 +79,12 @@
 .detail .detail_b_news {
   height: 460px;
   width: 440px;
-  background-color: pink;
 }
 
 .detail .detail_b_news .detail_b_news_header {
   height: 80px;
   font-size: 18px;
   line-height: 80px;
-  background-color: yellow;
 }
 
 .detail .detail_b_news .detail_b_news_content {
@@ -124,8 +120,7 @@
   color: red;
 }
 
-.detail .detail_b_news .detail_b_news_content #getBuycar,
-.detail .detail_b_news .detail_b_news_content #goShop {
+.detail .detail_b_news .detail_b_news_content #getBuycar {
   display: inline-block;
   height: 30px;
   width: 120px;
@@ -137,5 +132,13 @@
 }
 
 .detail .detail_b_news .detail_b_news_content #goShop {
-  background-color: red;
+  display: inline-block;
+  height: 30px;
+  width: 120px;
+  color: #fff;
+  background-color: #FEA829;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 4px;
+  background-color: #DC0F50;
 }

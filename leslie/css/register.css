@@ -32,24 +32,25 @@
   height: 33px;
 }
 
-.register .register_l .phoneNum,
-.register .register_l .setPassword,
-.register .register_l .confirmPassword {
+.register .register_l .phoneNum, .register .register_l .setPassword, .register .register_l .confirmPassword {
   width: 244px;
   border: 1px solid #ccc;
 }
 
-.register .register_l .code,
-.register .register_l .getRandom {
-  width: 144px;
+.register .register_l .code, .register .register_l .getRandom {
+  width: 130px;
   border: 1px solid #ccc;
 }
 
 .register .register_l .codeOutput {
-  width: 100px;
+  width: 80px;
   height: 33px;
-  background-color: pink;
-  padding-top: 14px;
+}
+
+.register .register_l #my_button {
+  width: 25px;
+  height: 33px;
+  background-color: #DC0F50;
 }
 
 .register .register_l #getRandomBtn {

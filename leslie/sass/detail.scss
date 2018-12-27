@@ -1,122 +1,139 @@
 #nav {
-  height: 37px;
-  border-bottom:3px solid #DC0F50 ;
-}
-.nav li {
-  height: 34px;
-  float: left;
-  padding-left: 40px;
+    height: 37px;
+    border-bottom: 3px solid #DC0F50;
 }
 
-.nav .allgoodsli {
-  width: 188px;
-  background-color: #000000;
+.nav {
+    li {
+        height: 34px;
+        float: left;
+        padding-left: 40px;
+    }
+    .allgoodsli {
+        width: 188px;
+        background-color: #000000;
+        a {
+            color: #fff;
+        }
+    }
+    li a {
+        font-size: 12px;
+        line-height: 34px;
+        color: #000000;
+    }
+}
+.detail {
+    .detail_t {
+        height: 30px;
+//      background-color: red;
+    }
+    .detail_b {
+        height: 460px;
+        border: 1px solid #ccc;
+    }
+    .detail_b_banner {
+        height: 460px;
+        width: 93px;
+//      background-color: blue;
+    }
+    .detail_b_img {
+        height: 460px;
+        width: 368px;
+        padding-top: 26px;
+        margin-right: 36px;
+//      background-color: yellow;
+    }
 }
 
-.nav .allgoodsli a {
-  color: #fff;
+#ampBox {
+    border: 1px solid #ccc;
+    position: relative;
 }
 
-.nav li a {
-  font-size: 12px;
-  line-height: 34px;
-  color: #000000;
-}
-.detail .detail_t{
-    height: 30px;
-    background-color: red;
-}
-.detail .detail_b{
-    height: 460px;
-    border:1px solid #ccc ;
-}
-.detail .detail_b_banner{
-    height: 460px;
-    width: 93px;
-    background-color: blue;
-}
-.detail .detail_b_img{
-    height: 460px;
-    width: 368px;
-    padding-top: 26px;
-    margin-right: 36px;
-    background-color: yellow;
-}
-#ampBox{
-    border:1px solid #ccc;
-    position:relative;
-}
-.imgBox{
-    overflow:hidden;
-    position:absolute;
-    left:690px;
-    top:195px;
+.imgBox {
+    overflow: hidden;
+    position: absolute;
+    left: 690px;
+    top: 195px;
     height: 460px;
     width: 460px;
-    display:none;
-    border:1px solid #ccc;
-    overflow:hidden;
+    display: none;
+    border: 1px solid #ccc;
+    overflow: hidden;
 }
-#ampBox img,.imgBox img{
-    display:block;
-    width:100%;
+
+#ampBox img,
+.imgBox img {
+    display: block;
+    width: 100%;
 }
-.sp{
-    display:none;
-    position:absolute;
-    top:0;
-    left:0;
-    border:1px solid #ccc;
+
+.sp {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #ccc;
 }
-.detail .detail_b_news{
+
+.detail .detail_b_news {
     height: 460px;
     width: 440px;
-    background-color: pink;
-}
-.detail .detail_b_news .detail_b_news_header{
-    height: 80px;
-    font-size: 18px;
-    line-height: 80px;
-    background-color: yellow;   
-}
-.detail .detail_b_news .detail_b_news_content{
-    font-size: 12px;
-}
-.detail .detail_b_news .detail_b_news_content dt{
-    font-size: 20px;
-    line-height: 36px;
-    color: red;
-    margin-bottom: 10px;
-}
-.detail .detail_b_news .detail_b_news_content dd{
-    font-size: 12px;
-    line-height: 32px;
-}
-.detail .detail_b_news .detail_b_news_content span{
-    display: inline-block;
-    font-size: 12px;
-    width: 60px;
-}
-.detail .detail_b_news .detail_b_news_content dd:nth-child(6) span{
-    display: inline;
-    padding-left: 20px;
-    margin-right: 20px;
-}
-.detail .detail_b_news .detail_b_news_content dd:nth-child(7) span{
-    display: inline;
-    color: red;
-}
-.detail .detail_b_news .detail_b_news_content #getBuycar,
-.detail .detail_b_news .detail_b_news_content #goShop{
-    display: inline-block;
-    height: 30px;
-    width: 120px;
-    color: #fff;
-    background-color: #FEA829;
-    line-height: 30px;
-    text-align: center;
-    margin-right: 4px;
-}
-.detail .detail_b_news .detail_b_news_content #goShop{
-    background-color: red;
+//  background-color: pink;
+    .detail_b_news_header {
+        height: 80px;
+        font-size: 18px;
+        line-height: 80px;
+//      background-color: yellow;
+    }
+    .detail_b_news_content {
+        font-size: 12px;
+        dt {
+            font-size: 20px;
+            line-height: 36px;
+            color: red;
+            margin-bottom: 10px;
+        }
+        dd {
+            font-size: 12px;
+            line-height: 32px;
+        }
+        span {
+            display: inline-block;
+            font-size: 12px;
+            width: 60px;
+        }
+        dd {
+            &:nth-child(6) span {
+                display: inline;
+                padding-left: 20px;
+                margin-right: 20px;
+            }
+            &:nth-child(7) span {
+                display: inline;
+                color: red;
+            }
+        }
+        #getBuycar {
+            display: inline-block;
+            height: 30px;
+            width: 120px;
+            color: #fff;
+            background-color: #FEA829;
+            line-height: 30px;
+            text-align: center;
+            margin-right: 4px;
+        }
+        #goShop {
+            display: inline-block;
+            height: 30px;
+            width: 120px;
+            color: #fff;
+            background-color: #FEA829;
+            line-height: 30px;
+            text-align: center;
+            margin-right: 4px;
+            background-color: #DC0F50;
+        }
+    }
 }

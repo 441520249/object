@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded",function(){
 			alert("请勾选")
 		}else if(getRandom.value == randomMa){
 			alert("验证成功");
-//			location.href = '../index.html';
+			location.href = 'login.html';
 		}else if(getRandom.value != randomMa){
 			alert("您的验证码有误");
 			cal();
@@ -99,8 +99,16 @@ document.addEventListener("DOMContentLoaded",function(){
 	
 	
 	
-
-
+		//图片验证码
+		var verifyCode = new GVerify("v_container");
+		document.getElementById("my_button").onclick = function(){
+			var res = verifyCode.validate(document.getElementById("code_input").value);
+			if(res){
+				alert("验证正确");
+			}else{
+				alert("验证码错误");
+			}
+		}
 
 
 
