@@ -105,9 +105,16 @@ window.addEventListener("DOMContentLoaded", function() {
 			var $danjia = $(this).parent().parent().prev().html();
 			var $jiage = $(this).parent().parent().next();
 			$jiage.html(($danjia*$qty).toFixed(2));
-			
-			console.log(JSON.stringify(arr))
+//			console.log($(this).parent().parent().parent().attr("id"))
+			var i = $(this).parent().parent().parent().attr("id")-1;
+			arr[i].qty++;
+			console.log(arr[i].qty)
 			Cookie.setCookie("goodslist", JSON.stringify(arr));
+			var alltotal = 0;
+			arr.map(function(item){
+				alltotal += item.price * item.qty;
+			})
+			allPrice.innerHTML = alltotal.toFixed(2);
 		})
 		$(".jian").on("click",function(){
 			var $qty = $(this).next().html();
@@ -118,6 +125,15 @@ window.addEventListener("DOMContentLoaded", function() {
 			var $danjia = $(this).parent().parent().prev().html()
 			var $jiage = $(this).parent().parent().next();
 			$jiage.html(($danjia*$qty).toFixed(2))
+			var i = $(this).parent().parent().parent().attr("id")-1;
+			arr[i].qty--;
+			console.log(arr)
+			Cookie.setCookie("goodslist", JSON.stringify(arr));
+			var alltotal = 0;
+			arr.map(function(item){
+				alltotal += item.price * item.qty;
+			})
+			allPrice.innerHTML = alltotal.toFixed(2);
 		})
 		
 	})

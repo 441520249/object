@@ -33,6 +33,20 @@ document.addEventListener("DOMContentLoaded",function(){
        	return true;
        }
 	}
+	
+	
+	//图片验证码
+	var verifyCode = new GVerify("v_container");
+	document.getElementById("my_button").onclick = function(){
+		var res = verifyCode.validate(document.getElementById("code_input").value);
+		if(res){
+			alert("验证正确");
+		}else{
+			alert("验证码错误");
+		}
+	}
+	
+	
 	//设置密码
 	var setPassword = document.getElementsByClassName("setPassword")[0];
 	setPassword.onblur = function(){
@@ -44,6 +58,7 @@ document.addEventListener("DOMContentLoaded",function(){
         	phoneOutput.innerHTML = "";
         }
 	}
+	
 	//二次密码
 	var confirmPassword = document.getElementsByClassName("confirmPassword")[0];
 	confirmPassword.onblur = function(){
@@ -56,6 +71,7 @@ document.addEventListener("DOMContentLoaded",function(){
         	phoneOutput.innerHTML = "";
         }
 	}
+	
 	//获取验证码
 	var getRandomBtn = document.getElementById("getRandomBtn");
 	getRandomBtn.onclick = function(){
@@ -69,6 +85,7 @@ document.addEventListener("DOMContentLoaded",function(){
 		}
 	    return randomMa ;
 	}
+	
 	//点击按钮判断
 	var getRandom = document.getElementsByClassName("getRandom")[0];
 	var registerBtn = document.getElementById("registerBtn");
@@ -98,18 +115,6 @@ document.addEventListener("DOMContentLoaded",function(){
 	}
 	
 	
-	
-		//图片验证码
-		var verifyCode = new GVerify("v_container");
-		document.getElementById("my_button").onclick = function(){
-			var res = verifyCode.validate(document.getElementById("code_input").value);
-			if(res){
-				alert("验证正确");
-			}else{
-				alert("验证码错误");
-			}
-		}
-
 
 
 

@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			console.log(goodsarr);//拿到后端40天数据
 			render(goodsarr);
 			var yuanarr = goodsarr.slice(0);
-			render(goodsarr.slice(0, 5));
+			render(goodsarr.slice(0, 20));
 			function render(arr){
 				gbox.innerHTML = arr.map(function(item){				
 					return `<li class="goods fl">
@@ -89,8 +89,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-	//选项卡
+	
 	jQuery(function($){
+		//选项卡
 		$(".imgUrl").on("mouseover",function(){
 			this.style.width ='180px';	
 			this.style.height ='180px';
@@ -99,7 +100,41 @@ document.addEventListener("DOMContentLoaded", function() {
 			this.style.width ='160px';	
 			this.style.height ='160px';			
 		})
+		
+
+		//点击轮播
+		var move = true;
+		$("#shop_rbtn").on("click",function(){
+			if(!move){
+				return;
+			}else{
+				move = true;
+				var $leng = 188;
+				var $gbox = $(this).prev()
+				console.log($gbox.position().left)
+				$gbox.animate({left:($gbox.position().left-$leng)},500,function(){
+					move = false;
+				})
+			}
+		})
+		$("#shop_lbtn").on("click",function(){
+			var $leng = 188;
+			var $gbox = $(this).next()
+			if($gbox.position().left > 0){
+				$gbox.position().left = 0
+			}else{
+				$gbox.animate({left:($gbox.position().left+$leng)},500,function(){
+					console.log(111)
+				})
+			}
+		})
+		
+		
+		
+		
 	})
+	
+	
 	
 	
 	

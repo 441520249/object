@@ -108,13 +108,27 @@
   height: 240px;
   padding-top: 22px;
   margin-bottom: 18px;
+  position: relative;
+  overflow: hidden;
   #shop_lbtn {
     margin-top: 77px;
     float: left;
+    position: absolute;
+    z-index: 2;
   }
   #shop_rbtn {
     margin-top: 77px;
-    float: right;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+  }
+  .gbox{
+      position: absolute;
+      left: 23px;
+      float: left;
+      width:20000px;
+      height: 240px;
+
   }
   .goods {
     width: 160px;
