@@ -108,25 +108,31 @@ document.addEventListener("DOMContentLoaded", function() {
 			if(!move){
 				return;
 			}else{
-				move = true;
+				move = false;
 				var $leng = 188;
 				var $gbox = $(this).prev()
 				console.log($gbox.position().left)
 				$gbox.animate({left:($gbox.position().left-$leng)},500,function(){
-					move = false;
+					move = true;
 				})
 			}
 		})
 		$("#shop_lbtn").on("click",function(){
-			var $leng = 188;
-			var $gbox = $(this).next()
-			if($gbox.position().left > 0){
-				$gbox.position().left = 0
+			if(!move){
+				return;
 			}else{
-				$gbox.animate({left:($gbox.position().left+$leng)},500,function(){
-					console.log(111)
-				})
+				move = false;
+				var $leng = 188;
+				var $gbox = $(this).next()
+				if($gbox.position().left > 0){
+					$gbox.position().left = 0
+				}else{
+					$gbox.animate({left:($gbox.position().left+$leng)},500,function(){
+						move = true;
+					})
+				}
 			}
+			
 		})
 		
 		
