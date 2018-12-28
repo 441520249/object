@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded",function(){
 			arr.push(lctSrcObj)
 		}
 		Cookie.setCookie("goodslist",JSON.stringify(arr));
+		console.log(arr)
 		
 		//飞去购物车
 		var cloneImg = mainShopImg.cloneNode();

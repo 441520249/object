@@ -25,7 +25,6 @@
 .detail {
     .detail_t {
         height: 30px;
-//      background-color: red;
     }
     .detail_b {
         height: 460px;
@@ -34,14 +33,12 @@
     .detail_b_banner {
         height: 460px;
         width: 93px;
-//      background-color: blue;
     }
     .detail_b_img {
         height: 460px;
         width: 368px;
         padding-top: 26px;
         margin-right: 36px;
-//      background-color: yellow;
     }
 }
 
@@ -83,12 +80,13 @@
 .detail .detail_b_news {
     height: 460px;
     width: 440px;
-//  background-color: pink;
+    .golist{
+       font-size: 30px;
+    }
     .detail_b_news_header {
         height: 80px;
         font-size: 18px;
         line-height: 80px;
-//      background-color: yellow;
     }
     .detail_b_news_content {
         font-size: 12px;

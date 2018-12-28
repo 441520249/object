@@ -87,6 +87,10 @@
   width: 440px;
 }
 
+.detail .detail_b_news .golist {
+  font-size: 30px;
+}
+
 .detail .detail_b_news .detail_b_news_header {
   height: 80px;
   font-size: 18px;

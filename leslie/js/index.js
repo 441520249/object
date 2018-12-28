@@ -43,7 +43,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			function render(arr){
 				gbox.innerHTML = arr.map(function(item){				
 					return `<li class="goods fl">
+						<div class="imgBox">
 						<img class="imgUrl" src="${item.url}" />
+						</div>
 						<div class="discount">${item.discount}折</div>
 						<div class="goodscontent fl">${item.goodname}</div>
 						<div class="buy fr">立即抢购</div>
@@ -66,37 +68,41 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 	})
 	
-	//登录
-//	var topLogin = document.getElementById("topLogin");
-//	var topLoginName = document.getElementById("topLoginName");
-//	var topLoginOut = document.getElementById("topLoginOut");
-//
-//	var obj={};
-//	var brr = document.cookie.split("; ");
-//	console.log(brr)
-//	brr.forEach(function(item){
-//      var crr = item.split("=");
-//      obj[crr[0]] =  crr[1]; 
-//      console.log(obj)
-//	})
-//	if(document.cookie == ''){
-//		topLoginName.style.display = 'none'
-//		topLoginOut.style.display = 'none'
-//	}
-//	else if(document.cookie != ''){
-//		topLoginName.style.display = 'inline-block'
-//		topLoginOut.style.display = 'inline-block'
-//		topLoginName.innerHTML = obj.uname;
-//		topLoginOut.innerHTML = "退出";
-//		topLogin.style.display = 'none'
-//	}
-//	topLoginOut.onclick = function(){
-//		topLogin.innerHTML = "请登录";
-//		topLoginName.innerHTML = '';
-//		topLoginOut.innerHTML = "";
-//		Cookie.delCookie("uname",'/')
-//		Cookie.delCookie("upwd",'/')
-//	}
+	//倒计时
+	var countDown = document.getElementById("countDown");
+	var d = new Date("2019/01/01 00:00:00");
+    endTime();
+    var timer = setInterval(endTime, 1000)
+	 function endTime(){
+        var now = new Date();
+        // 2. 获取之间相差的毫秒数/1000=>秒
+        var offset = parseInt((d.getTime() - now.getTime())/1000);
+        var seconds = offset%60;
+        var minute = parseInt(offset/60)%60;//65分钟：1小时5分钟
+        var hour = parseInt(offset/60/60)%24;//25小时：1天1小时
+        var tian = parseInt(offset/60/60/24);       
+        countDown.innerHTML = tian+"天"+hour+"小时"+minute+"分钟"+seconds+"秒";
+        //3. 如果差值小于等于0，清除定时器，换图片，文字隐藏
+        if(offset <= 0){
+            clearInterval(timer);
+            countDown.innerHTML = "";
+        }
+    }
+
+	//选项卡
+	jQuery(function($){
+		$(".imgUrl").on("mouseover",function(){
+			this.style.width ='180px';	
+			this.style.height ='180px';
+		})
+		$(".imgUrl").on("mouseout",function(){
+			this.style.width ='160px';	
+			this.style.height ='160px';			
+		})
+	})
 	
+	
+	
+
 
 })

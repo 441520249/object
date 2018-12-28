@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/base.css" />
 		<link rel="stylesheet" type="text/css" href="../css/public.css" />
 		<link rel="stylesheet" href="../css/car.css" />
+		<script src="../lib/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/car.js" type="text/javascript" charset="utf-8"></script>
@@ -99,7 +100,7 @@
 						<input type="checkbox" id="checkboxAll" /><span>全选</span><span>商品</span><span>单价（元）</span><span>数量</span><span>小计（元）</span><span>操作</span>
 					</div>
 					<ul class="settlement_c_content">
-						<li class="carGoods">
+						<!--<li class="carGoods">
 							<div class="inp fl"><input type="checkbox" id="checkboxBtn" /></div>
 							<div class="img fl"><img src="../images/car/car_goods.png" /></div>
 							<div class="con fl">
@@ -120,13 +121,13 @@
 							</div>
 							<div class="total fl"></div>
 							<div class="delete fl">删除</div>
-						</li>
+						</li>-->
 						
 					</ul>
 				</div>
 				<div class="settlement_b">
-					<input type="checkbox" name="checkedAll" id="checkedAll" /><span>全选</span><span>删除选中的商品</span>
-					<span></span><span>应付款</span><span>￥3244.00</span><span>去结算</span>
+					<input type="checkbox" name="checkedAll" id="checkedAll" /><span >全选</span><span id="Cardelete">删除选中的商品</span>
+					<span></span><span>应付款</span>￥<span class="allPrice">3244.00</span><span><a href="login.html">去结算</a></span>
 				</div>
 			</div>
 		</div>

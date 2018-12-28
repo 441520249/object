@@ -148,6 +148,12 @@
   margin-left: 28px;
 }
 
+.shop_b .goods .imgBox {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+}
+
 .shop_b .gbox .goods:nth-child(1) {
   margin-left: 0;
 }
