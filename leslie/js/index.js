@@ -1,4 +1,50 @@
-document.addEventListener("DOMContentLoaded", function() {
+
+jQuery(function($){
+	//选项卡
+	$(".imgUrl").on("mouseover",function(){
+		this.style.width ='180px';	
+		this.style.height ='180px';
+	})
+	$(".imgUrl").on("mouseout",function(){
+		this.style.width ='160px';	
+		this.style.height ='160px';			
+	})
+	
+
+	//点击轮播
+	var move = false;
+	$("#shop_rbtn").on("click",function(){
+		if(move == true){
+			return;
+		}
+		else if(move == false){
+			move = true;
+			var $leng = 188;
+			var $gbox = $(this).prev()
+			console.log($gbox.position().left)
+			$gbox.animate({left:($gbox.position().left-$leng)},500,function(){
+				move = false;
+			})
+		}
+	})
+	$("#shop_lbtn").on("click",function(){
+		if(!move){
+			return;
+		}else{
+			move = false;
+			var $leng = 188;
+			var $gbox = $(this).next()
+			if($gbox.position().left > 0){
+				$gbox.position().left = 0
+			}else{
+				$gbox.animate({left:($gbox.position().left+$leng)},500,function(){
+					move = true;
+				})
+			}
+		}
+		
+	})
+	
 	//滚回顶部
 	var live = document.getElementById("live");
 	window.onscroll =  function(){
@@ -88,62 +134,13 @@ document.addEventListener("DOMContentLoaded", function() {
             countDown.innerHTML = "";
         }
     }
-
-	
-	jQuery(function($){
-		//选项卡
-		$(".imgUrl").on("mouseover",function(){
-			this.style.width ='180px';	
-			this.style.height ='180px';
-		})
-		$(".imgUrl").on("mouseout",function(){
-			this.style.width ='160px';	
-			this.style.height ='160px';			
-		})
-		
-
-		//点击轮播
-		var move = true;
-		$("#shop_rbtn").on("click",function(){
-			if(!move){
-				return;
-			}else{
-				move = false;
-				var $leng = 188;
-				var $gbox = $(this).prev()
-				console.log($gbox.position().left)
-				$gbox.animate({left:($gbox.position().left-$leng)},500,function(){
-					move = true;
-				})
-			}
-		})
-		$("#shop_lbtn").on("click",function(){
-			if(!move){
-				return;
-			}else{
-				move = false;
-				var $leng = 188;
-				var $gbox = $(this).next()
-				if($gbox.position().left > 0){
-					$gbox.position().left = 0
-				}else{
-					$gbox.animate({left:($gbox.position().left+$leng)},500,function(){
-						move = true;
-					})
-				}
-			}
-			
-		})
-		
-		
-		
-		
-	})
 	
 	
-	
-	
-	
-
-
 })
+	
+	
+	
+	
+	
+
+

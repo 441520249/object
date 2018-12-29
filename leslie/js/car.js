@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", function() {
 	var carList = document.getElementsByClassName("settlement_c_content")[0];
-//	var subPrice = document.getElementsByClassName("total")[0];
 	var allPrice = document.getElementsByClassName("allPrice")[0];
+	var Carbox = document.getElementsByClassName("Carbox")[0]
 	var arr = Cookie.getCookie("goodslist") || [];
 	if(typeof arr == "string") {
 		arr = JSON.parse(arr);
@@ -52,6 +52,16 @@ window.addEventListener("DOMContentLoaded", function() {
 	 	</li>`
 		}).join("");
 		allPrice.innerHTML = alltotal.toFixed(2);
+		
+		
+		Carbox.innerHTML = arr.map(function(item){
+			return `
+					<div class="Carbox_l fl"><img src="${item.url}" /></div>
+					<div class="Carbox_c fl">${item.goodname}</div>
+					<div class="Carbox_r fl">${item.price}X${item.qty}</div>
+					`
+		}).join("");
+		
 	}
 
 	var checkboxAll = document.getElementById("checkboxAll");
@@ -87,7 +97,6 @@ window.addEventListener("DOMContentLoaded", function() {
 	
 	//删除商品
 	var Cardelete = document.getElementById("Cardelete");
-	console.log(Cardelete)
 	Cardelete.onclick = function(){
 		carList.innerHTML = "";
         allPrice.innerHTML = 0;
@@ -105,10 +114,14 @@ window.addEventListener("DOMContentLoaded", function() {
 			var $danjia = $(this).parent().parent().prev().html();
 			var $jiage = $(this).parent().parent().next();
 			$jiage.html(($danjia*$qty).toFixed(2));
-//			console.log($(this).parent().parent().parent().attr("id"))
-			var i = $(this).parent().parent().parent().attr("id")-1;
+//			console.log($(this).parent().parent().parent().attr("id"))			
+			var gid = $(this).parent().parent().parent().attr("id");
+			var i;
+			arr.some(function(item,idx){
+				i = idx
+				return item.id == gid
+			})
 			arr[i].qty++;
-			console.log(arr[i].qty)
 			Cookie.setCookie("goodslist", JSON.stringify(arr));
 			var alltotal = 0;
 			arr.map(function(item){
@@ -125,9 +138,14 @@ window.addEventListener("DOMContentLoaded", function() {
 			var $danjia = $(this).parent().parent().prev().html()
 			var $jiage = $(this).parent().parent().next();
 			$jiage.html(($danjia*$qty).toFixed(2))
-			var i = $(this).parent().parent().parent().attr("id")-1;
+			var gid = $(this).parent().parent().parent().attr("id");
+			var i;
+			arr.some(function(item,idx){
+				i = idx
+				return item.id == gid
+			})
 			arr[i].qty--;
-			console.log(arr)
+
 			Cookie.setCookie("goodslist", JSON.stringify(arr));
 			var alltotal = 0;
 			arr.map(function(item){

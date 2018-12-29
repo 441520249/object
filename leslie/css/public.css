@@ -66,11 +66,56 @@
   height: 36px;
   border: 1px solid #ccc;
   text-align: center;
+  position: relative;
 }
 
 .header .header_r .shopCar span {
   font-size: 12px;
   line-height: 36px;
+}
+
+.header .header_r .shopCar:hover .shopCarbox {
+  display: block;
+}
+
+.header .header_r .shopCar .shopCarbox {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 36px;
+  width: 200px;
+  border: 1px solid #ccc;
+  background-color: #C6C8E3;
+}
+
+.header .header_r .shopCar .shopCarbox p {
+  height: 50px;
+}
+
+.header .header_r .shopCar .shopCarbox .Carbox {
+  text-align: left;
+}
+
+.header .header_r .shopCar .shopCarbox .Carbox .Carbox_l {
+  width: 50px;
+  height: 50px;
+}
+
+.header .header_r .shopCar .shopCarbox .Carbox .Carbox_l img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .header_r .shopCar .shopCarbox .Carbox .Carbox_c {
+  width: 70px;
+  height: 50px;
+  font-size: 12px;
+}
+
+.header .header_r .shopCar .shopCarbox .Carbox .Carbox_r {
+  width: 75px;
+  height: 50px;
+  font-size: 12px;
 }
 
 .header .bian {

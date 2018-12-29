@@ -37,14 +37,14 @@ document.addEventListener("DOMContentLoaded",function(){
 	
 	//图片验证码
 	var verifyCode = new GVerify("v_container");
-	document.getElementById("my_button").onclick = function(){
-		var res = verifyCode.validate(document.getElementById("code_input").value);
-		if(res){
-			alert("验证正确");
-		}else{
-			alert("验证码错误");
-		}
-	}
+//	document.getElementById("my_button").onclick = function(){
+//		var res = verifyCode.validate(document.getElementById("code_input").value);
+//		if(res){
+//			alert("验证正确");
+//		}else{
+//			alert("验证码错误");
+//		}
+//	}
 	
 	
 	//设置密码
@@ -91,11 +91,13 @@ document.addEventListener("DOMContentLoaded",function(){
 	var registerBtn = document.getElementById("registerBtn");
 	var check = document.getElementById("check")
 	registerBtn.onclick = function(){
-		if((phoneNum.value).trim()=="" || (setPassword.value).trim()=="" || (confirmPassword.value).trim()=="" ){
+		if((phoneNum.value).trim()=="" || (setPassword.value).trim()=="" || (confirmPassword.value).trim()==""){
 			alert("请输入全部信息");
+		}else if(!verifyCode.validate(document.getElementById("code_input").value)){
+			alert("图片验证错");
 		}else if(inp.checked == false){
 			alert("请勾选")
-		}else if(getRandom.value == randomMa){
+		}else if(getRandom.value.toLowerCase() == randomMa.toLowerCase()){
 			alert("验证成功");
 			location.href = 'login.html';
 		}else if(getRandom.value != randomMa){
@@ -106,10 +108,9 @@ document.addEventListener("DOMContentLoaded",function(){
 		var xhr = new XMLHttpRequest();		 
 	        xhr.onreadystatechange = function(){
 	            if(xhr.readyState == 4 && status.indexOf(xhr.status) != -1){
-	             	  console.log(xhr.responseText);
+//	             	  console.log(xhr.responseText);
 	            }
 	        }
-	        console.log(phoneNum.value,setPassword.value)
 		xhr.open('get',`../api/register.php?phoneNum=${phoneNum.value}&setPassword=${setPassword.value}&register=${register}`,true);
 		xhr.send(null);   
 	}
